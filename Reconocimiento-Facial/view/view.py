@@ -4,10 +4,10 @@ import os
 import imutils
 import numpy as np
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QPushButton, QVBoxLayout, QWidget, QComboBox, QMessageBox
-#from model.training import train_model
-#from model.user_model import User
-#from model.reconocimiento_model import RecognitionLog
-#from services.reconocimiento_facial import compare_facial_images, capture_facial_image
+from model.training import train_model
+from model.user_model import User
+from model.reconocimiento_model import RecognitionLog
+from services.reconocimiento_facial import compare_facial_images, capture_facial_image
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QFont
 from PyQt5.QtGui import QPixmap
