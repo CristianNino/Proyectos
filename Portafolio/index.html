@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Cristian Ricardo Niño Ojeda</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Perfil.png" alt="">
+            </div>
+            <h1>Cristian Ricardo Niño Ojeda</h1>
+            <h2>Ingeniero de sistemas y computacion con enfasis en el desarrollo de aplicaciones funcionales.</h2>
+            <div class="redes">
+                <a target="_blank" href="https://github.com/CristianNino/Proyectos/tree/Proyectos"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/cristian-ricardo-ni%C3%B1o-ojeda-a0a090273/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Cristian Ricardo Niño Ojeda.</span> Soy estudiante de Noveno semestre de ingeniería de sistemas y computación, teniendo conocimientos aplicados en lenguajes como JAVA, PYTHON, JAVASCRIP Y SQL capaces de analizar y dar soluciones a problemáticas en el ámbito del desarrollo e informático, desarrollando proyectos como un sistema de registros e inventarios y simulación de un parqueadero. Teniendo habilidades para el trabajo cooperativo de manera presencial o virtual con el objetivo de poder pertenecer a una empresa que me permita tener nuevos conocimientos y crecer como ingeniero de sistemas y computación.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento</strong>
+                            06-09-2003
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            312 467 1258
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            chris06111gmail.com.
+                        </li>
+                        <li>
+                            <strong>Linkedin</strong>
+                            www.linkedin.com/in/cristian-ricardo-niño-ojeda-a0a090273
+                        </li>
+                        <li>
+                            <strong>Repoitorio</strong>
+                            https://github.com/CristianNino/Proyectos
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Ingeniero de Sistemas y Computacion</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-brands fa-java"></i>
+                            <span>JAVA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-python"></i></i>
+                            <span>PYTHON</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JAVASCRIP</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>SQL</span>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <a target="_blank" href="Documentos/Curriculum Cristian Ricardo Niño Ojeda 2.pdf"> <button >
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button></a>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <a target="_blank" href="https://github.com/CristianNino/Proyectos/tree/Proyectos/Galletas"><div class="proyecto">
+                <img src="img/Inventarios.png" alt="">
+                   <div class="overlay">
+                        <h3>Sistemas de registro de inventarios</h3>
+                        <p>Colaborador en la elaboracion de una aplicacion que permite hacer el registro de galletas y fideos de un almacen</p>
+
+                    </div>
+                </div></a>
+                <a target="_blank" href="https://github.com/CristianNino/Proyectos/tree/Proyectos/Reconocimiento-Facial"><div class="proyecto">
+                    
+                    <img src="img/Reconocimiento.png" alt="">
+                    <div class="overlay">
+                        
+                        <h3>Reconocimiento facial</h3>
+                        <p>Colaborador de un reconocimiento facial haciendo simulacion hacia una alcaldia municipal</p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a target="_blank" href="https://github.com/CristianNino/Proyectos/tree/Proyectos"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/cristian-ricardo-ni%C3%B1o-ojeda-a0a090273/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
