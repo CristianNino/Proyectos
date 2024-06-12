@@ -319,8 +319,8 @@ html{
     padding: 20px 0;
 }
 .portfolio .galeria{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-around;
 }
 .portfolio .galeria .proyecto{
@@ -328,6 +328,7 @@ html{
     max-width: 340px;
     height: fit-content;
     margin: 10px;
+    
     cursor: pointer;
 }
 .portfolio .galeria .proyecto img{
