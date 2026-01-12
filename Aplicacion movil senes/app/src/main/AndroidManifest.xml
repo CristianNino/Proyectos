@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_senes"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        tools:targetApi="31">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity
+            android:name=".generarExcel"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicio_flexibilidad"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicio_cardiovascular"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicio_equilibrio"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicio_fuerza"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicios"
+            android:exported="false" />
+        <activity
+            android:name=".licencias"
+            android:exported="false" />
+        <activity
+            android:name=".menu"
+            android:exported="false" />
+        <activity
+            android:name=".select_participante"
+            android:exported="false" />
+        <activity
+            android:name=".prueba"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".registrousuario"
+            android:exported="false" />
+        <activity
+            android:name=".resultado"
+            android:exported="false" />
+        <activity
+            android:name=".bateria_ejercicio1"
+            android:exported="false" />
+        <activity
+            android:name=".bateria_ejercicio2"
+            android:exported="false" />
+        <activity
+            android:name=".bateria_ejercicio3"
+            android:exported="false" />
+        <activity
+            android:name=".descripcion_bateria"
+            android:exported="false" />
+        <activity
+            android:name=".materiales_bateria"
+            android:exported="false" />
+        <activity
+            android:name=".info_bateria"
+            android:exported="false" />
+        <activity
+            android:name=".login_usuario"
+            android:exported="false" />
+        <activity
+            android:name=".mis_baterias"
+            android:exported="true" />
+        <activity
+            android:name=".recomendaciones"
+            android:exported="false" />
+        <activity
+            android:name=".tyc"
+            android:exported="false" />
+        <activity
+            android:name=".registro_participante"
+            android:exported="false" />
+        <activity
+            android:name=".miparticipante"
+            android:exported="true"
+            android:label="@string/title_activity_prueba" />
+        <activity
+            android:name=".procedimientos"
+            android:exported="false" />
+        <activity
+            android:name=".consideraciones"
+            android:exported="false" />
+        <activity
+            android:name=".Previas"
+            android:exported="false" />
+        <activity
+            android:name=".durante"
+            android:exported="false" />
+        <activity
+            android:name=".durante_2"
+            android:exported="false" />
+    </application>
+
+</manifest>
